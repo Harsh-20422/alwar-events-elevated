@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SectionHeading from "@/components/SectionHeading";
+import SeoSection from "@/components/SeoSection";
 import { Star, Award, Users, MapPin, Calendar, Music, Lightbulb, UtensilsCrossed, Building, Camera, ArrowRight, Phone, MessageCircle, Heart } from "lucide-react";
 import heroImg from "@/assets/hero-wedding.jpg";
 import venueDecor from "@/assets/venue-decor.jpg";
@@ -44,6 +45,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* SEO SECTION */}
+      <SeoSection />
 
       {/* ABOUT PREVIEW */}
       <section className="section-padding bg-card">

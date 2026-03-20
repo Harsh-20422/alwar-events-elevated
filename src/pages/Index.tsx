@@ -46,6 +46,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* SEO SECTION */}
+      <SeoSection />
+
       {/* ABOUT PREVIEW */}
       <section className="section-padding bg-card">
         <div className="container-luxury grid md:grid-cols-2 gap-12 items-center">

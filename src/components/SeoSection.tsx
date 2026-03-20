@@ -2,17 +2,14 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, CheckCircle2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-
 const highlights = [
   "7+ Years Experience",
   "100+ Events Completed",
   "Available in Alwar, Jaipur & Delhi",
 ];
-
 const SeoSection = () => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -26,7 +23,6 @@ const SeoSection = () => {
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
-
   return (
     <section
       ref={ref}
@@ -44,16 +40,13 @@ const SeoSection = () => {
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
             Best Wedding Planner in Alwar, Jaipur &amp; Delhi
           </h2>
-
           <div className="flex justify-center mb-4">
             <div className="w-20 h-0.5 bg-secondary rounded-full" />
           </div>
-
           <p className="text-secondary font-heading text-base md:text-lg mb-8 tracking-wide">
             Creating unforgettable weddings with elegance and perfection
           </p>
         </div>
-
         <div
           className={`transition-all duration-700 delay-200 ease-out ${
             visible
@@ -80,7 +73,6 @@ const SeoSection = () => {
             </p>
           </div>
         </div>
-
         <div
           className={`transition-all duration-700 delay-[400ms] ease-out ${
             visible
@@ -101,7 +93,6 @@ const SeoSection = () => {
               Plan Your Event Now
             </Button>
           </a>
-
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
             {highlights.map((h) => (
               <span
@@ -118,5 +109,4 @@ const SeoSection = () => {
     </section>
   );
 };
-
 export default SeoSection;

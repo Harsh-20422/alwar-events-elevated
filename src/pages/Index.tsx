@@ -240,20 +240,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* MULTI-CITY */}
-      <section className="section-padding bg-secondary/10">
-        <div className="container-luxury text-center">
-          <SectionHeading title="Our Presence" subtitle="We proudly offer services across Alwar, Jaipur, and Delhi, delivering premium event experiences across multiple cities." />
-          <div className="flex flex-wrap justify-center gap-8">
-            {["Alwar", "Jaipur", "Delhi"].map((city) => (
-              <div key={city} className="bg-card rounded-xl px-12 py-8 shadow-soft hover-lift">
-                <MapPin className="text-primary mx-auto mb-3" size={28} />
-                <p className="font-heading text-xl font-semibold">{city}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* INSTAGRAM */}
       <section className="section-padding bg-card">

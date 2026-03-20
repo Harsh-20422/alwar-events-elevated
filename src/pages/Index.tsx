@@ -7,7 +7,7 @@ import heroImg from "@/assets/hero-wedding.jpg";
 import venueDecor from "@/assets/venue-decor.jpg";
 import weddingPhoto from "@/assets/wedding-photo-1.jpg";
 import coupleShoot from "@/assets/couple-shoot.jpg";
-import cinematicVideo from "@/assets/cinematic-video.jpg";
+import cinematicVideo from "@/assets/cinematic-video.jpg"; 
 import droneShot from "@/assets/drone-shot.jpg";
 import djWheels from "@/assets/dj-wheels.jpg";
 import lighting from "@/assets/lighting.jpg";
